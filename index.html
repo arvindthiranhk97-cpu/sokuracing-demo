@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOKU Racing · Bodykits &amp; Car Accessories, Johor Bahru</title>
+<meta name="description" content="Bodykits, carbon spoilers, headlights, steering wheels and more for Honda, Toyota, Proton, Perodua and more. Taman Perling, Johor Bahru.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#08080a">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://arvindthiranhk97-cpu.github.io/sokuracing-demo/">
+<meta property="og:title" content="SOKU Racing × Civic Type R FL5">
+<meta property="og:description" content="Scroll to build the car: MG bodykit, Voltx swan-neck wing and Newspeed headlights, in 3D.">
+<meta property="og:image" content="https://arvindthiranhk97-cpu.github.io/sokuracing-demo/img/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#top" class="logo" aria-label="SOKU Racing, home"><img src="img/logo.png" alt="SOKU Racing" width="180" height="25"></a>
+  <nav aria-label="Main">
+    <a href="#kit">FL5 kits</a>
+    <a href="#cars">Shop by car</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn btn-red btn-sm" href="https://wa.me/60165803055" target="_blank" rel="noopener">WhatsApp us</a>
+</header>
+
+<main id="top">
+  <!-- Scroll story: sticky 3D stage, one GSAP timeline scrubbed across the section (story.js) -->
+  <section class="story" id="story" aria-label="Building an FL5 Type R with SOKU parts, one scroll at a time">
+    <div class="stage">
+      <canvas id="gl" aria-hidden="true"></canvas>
+      <div class="loader" id="loader" role="status">Rolling the Type R in… <span id="loadPct">0%</span></div>
+      <div class="split-line" id="splitLine" aria-hidden="true"></div>
+
+      <div class="scene s-split">
+        <p class="kicker">Honda Civic FL5 Type R</p>
+        <h1 class="giant"><span class="left">Stock</span><span class="right"><em>SOKU</em></span></h1>
+        <p class="cap">Same car. Scroll to see what a few parts change.</p>
+      </div>
+
+      <div class="scene s-part s-lip">
+        <p class="step">01 / 04</p><h2 class="giant">Front <em>lip.</em></h2>
+        <a class="card" href="https://www.sokuracing.com/product-page/fl5-type-r-mg-bodykit-full-set" target="_blank" rel="noopener"><img src="img/p-mg-kit.webp" alt=""><span><b>MG bodykit · front lip</b>Part of the MG full set</span></a>
+      </div>
+      <div class="scene s-part s-skirt">
+        <p class="step">02 / 04</p><h2 class="giant">Side <em>skirts.</em></h2>
+        <a class="card" href="https://www.sokuracing.com/product-page/fl5-type-r-mg-bodykit-full-set" target="_blank" rel="noopener"><img src="img/p-mg-kit.webp" alt=""><span><b>MG bodykit · side skirts</b>Part of the MG full set</span></a>
+      </div>
+      <div class="scene s-part s-diff">
+        <p class="step">03 / 04</p><h2 class="giant">Rear <em>diffuser.</em></h2>
+        <a class="card" href="https://www.sokuracing.com/product-page/fl5-type-r-mg-bodykit-full-set" target="_blank" rel="noopener"><img src="img/p-mg-kit.webp" alt=""><span><b>MG bodykit full set · RM3,600</b>Lip, skirts, diffuser. Painted and installed.</span></a>
+      </div>
+      <div class="scene s-part s-wing">
+        <p class="step">04 / 04</p><h2 class="giant">Swan-neck <em>wing.</em></h2>
+        <a class="card" href="https://www.sokuracing.com/product-page/fl1fl5-type-r-voltx-4bs-swan-neck-carbon-spoiler" target="_blank" rel="noopener"><img src="img/p-voltx-swan.webp" alt=""><span><b>Voltx 4BS swan-neck carbon · RM4,200</b>Fits FL1 and FL5 Type R</span></a>
+      </div>
+      <div class="scene s-built">
+        <h2 class="giant">Built<em>.</em></h2>
+        <p class="cap">MG full kit + Voltx swan-neck. Fitted at our Taman Perling shop.</p>
+      </div>
+      <div class="scene s-night">
+        <h2 class="giant">Night mode <em>on.</em></h2>
+        <p class="cap">Newspeed 5 projector headlights for FE / FL / FL5 · RM3,400</p>
+      </div>
+      <div class="scrim" aria-hidden="true"></div>
+      <div class="scene s-cta">
+        <h2 class="giant">Your car<br><em>is next.</em></h2>
+        <p class="cap">494+ parts for Honda, Toyota, Proton, Perodua and more.</p>
+        <div class="cta-row"><a class="btn btn-red" href="#kit">Shop FL5 kits</a><a class="btn btn-ghost" href="https://wa.me/60165803055" target="_blank" rel="noopener">Ask on WhatsApp</a></div>
+      </div>
+      <p class="model-note">3D illustration. Your parts may differ in shape.</p>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-band" aria-label="SOKU Racing in numbers">
+    <dl class="stats">
+      <div><dd><span data-count="494">494</span>+</dd><dt>Car accessories</dt></div>
+      <div><dd><span data-count="20">20</span>+</dd><dt>Years experience</dt></div>
+      <div><dd><span data-count="98">98</span>%</dd><dt>Client satisfaction</dt></div>
+      <div><dd>JB</dd><dt>Shop in Taman Perling</dt></div>
+    </dl>
+  </section>
+
+  <!-- FL5 KITS -->
+  <section class="kit" id="kit" aria-labelledby="kitTitle">
+    <div class="section-head">
+      <p class="eyebrow">Honda Civic FL5 Type R</p>
+      <h2 class="display-2" id="kitTitle">Aero for the FL5.</h2>
+      <p class="sub">A few of the FL5 parts in stock. Prices from sokuracing.com.</p>
+    </div>
+    <div class="products">
+      <a class="product feature" href="https://www.sokuracing.com/product-page/fl5-type-r-mg-bodykit-full-set" target="_blank" rel="noopener">
+        <img src="img/p-mg-kit.webp" alt="White FL5 Type R with the MG bodykit fitted" loading="lazy">
+        <span class="tag">Full set</span><h3>MG bodykit (full set)</h3><p>Front lip, side skirts, rear diffuser. Comes painted, installation included.</p><b class="price">RM 3,600</b></a>
+      <a class="product" href="https://www.sokuracing.com/product-page/fl1fl5-type-r-voltx-4bs-swan-neck-carbon-spoiler" target="_blank" rel="noopener">
+        <img src="img/p-voltx-swan.webp" alt="" loading="lazy"><span class="tag">Spoiler</span><h3>Voltx 4BS swan-neck carbon</h3><b class="price">RM 4,200</b></a>
+      <a class="product" href="https://www.sokuracing.com/product-page/honda-civic-fl5-type-r-ap-67-carbon-spoiler" target="_blank" rel="noopener">
+        <img src="img/p-ap-gt250.webp" alt="" loading="lazy"><span class="tag">Spoiler</span><h3>AP GT250 67" carbon</h3><b class="price">RM 3,800</b></a>
+      <a class="product" href="https://www.sokuracing.com/product-page/ap-carbon-front-lip" target="_blank" rel="noopener">
+        <img src="img/p-ap-lip.webp" alt="" loading="lazy"><span class="tag">Front lip</span><h3>AP carbon front lip</h3><b class="price">RM 1,250</b></a>
+      <a class="product" href="https://www.sokuracing.com/product-page/civic-fl5-ap-front-bumper-canard-splitter" target="_blank" rel="noopener">
+        <img src="img/p-ap-canard.webp" alt="" loading="lazy"><span class="tag">Canard</span><h3>AP front bumper canard splitter</h3><b class="price">RM 900</b></a>
+      <a class="product" href="https://www.sokuracing.com/honda-fl5-type" target="_blank" rel="noopener">
+        <img src="img/p-max-skirt.webp" alt="" loading="lazy"><span class="tag">Side skirt</span><h3>MAX add-on carbon side skirts</h3><b class="price">RM 1,300</b></a>
+      <a class="product" href="https://www.sokuracing.com/product-page/vrs-carbon-front-lip" target="_blank" rel="noopener">
+        <img src="img/p-var-lip.webp" alt="" loading="lazy"><span class="tag">Front lip</span><h3>VAR carbon front lip</h3><b class="price">RM 1,100</b></a>
+      <a class="product" href="https://www.sokuracing.com/product-page/aim-ducktail-carbon-spoiler-fl1fl5" target="_blank" rel="noopener">
+        <img src="img/p-aim-duck.webp" alt="" loading="lazy"><span class="tag">Spoiler</span><h3>AIM ducktail carbon</h3><b class="price">RM 680</b></a>
+    </div>
+    <a class="more" href="https://www.sokuracing.com/honda-fl5-type" target="_blank" rel="noopener"><span>All FL5 parts: lips, canards, spoilers, headlights, steering, ambient light, audio</span><span aria-hidden="true">→</span></a>
+  </section>
+
+  <!-- SHOP BY CAR -->
+  <section class="cars" id="cars" aria-labelledby="carsTitle">
+    <div class="section-head">
+      <p class="eyebrow">Shop by car</p>
+      <h2 class="display-2" id="carsTitle">Find your model.</h2>
+    </div>
+    <div class="brands">
+      <article><h3>Honda</h3><ul>
+        <li><a href="https://www.sokuracing.com/honda-fl5-type">FL5 Type R</a></li><li><a href="https://www.sokuracing.com/honda-civic-fefl1">Civic FE / FL1</a></li><li><a href="https://www.sokuracing.com/honda-civic-fc-fk7">Civic FC / FK7</a></li><li><a href="https://www.sokuracing.com/honda-fk8-type-r">FK8 Type R</a></li><li><a href="https://www.sokuracing.com/honda-city-gn2">City GN2</a></li><li><a href="https://www.sokuracing.com/honda-hrv">HR-V</a></li><li><a href="https://www.sokuracing.com/honda-crv">CR-V</a></li></ul></article>
+      <article><h3>Toyota</h3><ul>
+        <li><a href="https://www.sokuracing.com/toyota-gryaris">GR Yaris</a></li><li><a href="https://www.sokuracing.com/toyota-gr86">GR86</a></li><li><a href="https://www.sokuracing.com/toyota-viosac100">Vios AC100</a></li><li><a href="https://www.sokuracing.com/toyota-80">Noah / Voxy R80</a></li><li><a href="https://www.sokuracing.com/toyota-90">Noah / Voxy R90</a></li><li><a href="https://www.sokuracing.com/toyota-alphardvellfireagh30">Alphard / Vellfire AGH30</a></li><li><a href="https://www.sokuracing.com/toyota-alphardvellfireagh40">Alphard / Vellfire AGH40</a></li></ul></article>
+      <article><h3>Proton</h3><ul>
+        <li><a href="https://www.sokuracing.com/proton-x50">X50</a></li><li><a href="https://www.sokuracing.com/proton-x50new">X50 (new)</a></li><li><a href="https://www.sokuracing.com/proton-x70">X70</a></li><li><a href="https://www.sokuracing.com/proton-x90">X90</a></li><li><a href="https://www.sokuracing.com/proton-s70">S70</a></li><li><a href="https://www.sokuracing.com/proton-emas5">eMas 5</a></li><li><a href="https://www.sokuracing.com/proton-emas7">eMas 7</a></li></ul></article>
+      <article><h3>Perodua</h3><ul>
+        <li><a href="https://www.sokuracing.com/perodua-myvig3">Myvi G3</a></li><li><a href="https://www.sokuracing.com/perodua-ativa">Ativa</a></li><li><a href="https://www.sokuracing.com/perodua-alz">Alza</a></li><li><a href="https://www.sokuracing.com/perodua-bezza">Bezza</a></li><li><a href="https://www.sokuracing.com/perodua-axia">Axia</a></li></ul></article>
+      <article><h3>More</h3><ul>
+        <li><a href="https://www.sokuracing.com/suzukiswiftzc333s">Suzuki Swift ZC33S</a></li><li><a href="https://www.sokuracing.com/icaur-v23">iCAUR V23</a></li><li><a href="https://www.sokuracing.com/icaur-03">iCAUR 03</a></li><li><a href="https://www.sokuracing.com/gwm-g9">GWM G9</a></li><li><a href="https://www.sokuracing.com/omoda-c9">Omoda C9</a></li><li><a href="https://www.sokuracing.com/jetour-t2">Jetour T2</a></li><li><a href="https://www.sokuracing.com/universalaccessories">Universal parts</a></li></ul></article>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true"><div class="ticker-track">
+    <span>Bodykits</span><i></i><span>Carbon spoilers</span><i></i><span>Headlights</span><i></i><span>Sport steering</span><i></i><span>Ambient light</span><i></i><span>Audio</span><i></i><span>Meters</span><i></i>
+    <span>Bodykits</span><i></i><span>Carbon spoilers</span><i></i><span>Headlights</span><i></i><span>Sport steering</span><i></i><span>Ambient light</span><i></i><span>Audio</span><i></i><span>Meters</span><i></i>
+  </div></div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about" aria-labelledby="aboutTitle">
+    <div class="about-media"><img src="img/about.webp" alt="SOKU Racing shopfront in Taman Perling, Johor Bahru" loading="lazy"></div>
+    <div class="about-copy">
+      <p class="eyebrow">About SOKU Racing</p>
+      <h2 class="display-2" id="aboutTitle">More than a parts shop.</h2>
+      <p>A hub for car people who want their ride to look bolder, smarter and stand out. Bodykits, audio, Android players, sport steering wheels, engine covers, soundproofing, custom meters, ambient light and more.</p>
+      <ul class="pillars">
+        <li><b>Quality assurance</b>Products picked for reliability, style and lasting performance.</li>
+        <li><b>Fast shipping</b>Delivered quickly, wherever you are.</li>
+        <li><b>Customer support</b>Help with product choice and compatibility.</li>
+        <li><b>Product variety</b>Upgrades, styling, audio and more.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact" aria-labelledby="contactTitle">
+    <div class="section-head">
+      <p class="eyebrow">Visit or message</p>
+      <h2 class="display-2" id="contactTitle">Talk to the shop.</h2>
+    </div>
+    <div class="contact-grid">
+      <article class="box">
+        <h3>Shop</h3>
+        <p>20, Jalan Undan 17, Taman Perling,<br>81200 Johor Bahru, Johor</p>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=20+Jalan+Undan+17+Taman+Perling+81200+Johor+Bahru" target="_blank" rel="noopener">Directions</a>
+      </article>
+      <article class="box">
+        <h3>Call or WhatsApp</h3>
+        <ul class="phones">
+          <li><a href="tel:+60165803055">+60 16-580 3055</a><a href="https://wa.me/60165803055" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="tel:+601131778754">+60 11-3177 8754 <small>Ajim</small></a><a href="https://wa.me/601131778754" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="tel:+601111374611">+60 11-1137 4611 <small>Ah Le</small></a><a href="https://wa.me/601111374611" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </article>
+      <article class="box">
+        <h3>Email</h3>
+        <p><a href="mailto:jc@sokuracing.com">jc@sokuracing.com</a></p>
+        <p class="muted">Send your car model and the part you want. We'll confirm fitment and price.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <img src="img/logo.png" alt="SOKU Racing" width="160" height="22">
+  <span>© 2026 SOKU Racing Sdn Bhd 202401047950 (1593795-K)</span>
+  <span>3D car: “Honda_Civic_Type_R_FL5_Custom” by <a href="https://sketchfab.com/3d-models/2881ec9c483c439db1c5cb92b890d91d" target="_blank" rel="noopener">Bobby.2024</a>, CC BY 4.0, recoloured.</span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script src="main.js"></script>
+<script type="importmap">{"imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+}}</script>
+<script type="module" src="story.js"></script>
+</body>
+</html>
